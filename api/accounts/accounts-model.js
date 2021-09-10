@@ -2,19 +2,19 @@ const getAll = () => {
   // DO YOUR MAGIC
 }
 
-const getById = id => {
+const getById = () => {
   // DO YOUR MAGIC
 }
 
-const create = account => {
+const create = () => {
   // DO YOUR MAGIC
 }
 
-const updateById = (id, account) => {
+const updateById = () => {
   // DO YOUR MAGIC
 }
 
-const deleteById = id => {
+const deleteById = () => {
   // DO YOUR MAGIC
 }
 

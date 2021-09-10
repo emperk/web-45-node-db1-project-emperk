@@ -4,13 +4,13 @@ const md = require('./accounts-middleware');
 router.get('/', (req, res, next) => {
   // DO YOUR MAGIC
   try {
-    res.json([{},{}])
+    res.json('get accounts')
   } catch (err) {
     next(err)
   }
 })
 
-router.get('/:id', md,md.checkAccountId, (req, res, next) => {
+router.get('/:id', md.checkAccountId, (req, res, next) => {
   // DO YOUR MAGIC
   try {
     res.json('get account by id')
@@ -38,12 +38,12 @@ router.put(
   md.checkAccountPayload,
   md.checkAccountNameUnique,
   (req, res, next) => {
-  // DO YOUR MAGIC
-  try {
-    res.json('update account')
-  } catch (err) {
-    next(err)
-  }
+    // DO YOUR MAGIC
+    try {
+      res.json('update account')
+    } catch (err) {
+      next(err)
+    }
 });
 
 router.delete('/:id', md.checkAccountId, (req, res, next) => {
